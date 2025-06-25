@@ -53,7 +53,7 @@ pipeline {
 
     post {
         success {
-            echo 'Despliegue completado con éxito.'
+            echo ' Despliegue completado con éxito.'
         }
         failure {
             echo ' Falló el pipeline.'
