@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   frontend:
     build:
@@ -21,7 +23,7 @@ services:
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres
     ports:
-      - "8080:8080"
+      - "8081:8080"  # se cambia para evitar conflicto con Jenkins
     depends_on:
       - db
     networks:
